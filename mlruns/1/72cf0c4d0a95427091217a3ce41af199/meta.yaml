@@ -1,0 +1,15 @@
+artifact_uri: file:///home/juan/Documentos/maestr%C3%ADa/ciencia_Datos/trabajo_Kedro/kedro-phone/mlruns/1/72cf0c4d0a95427091217a3ce41af199/artifacts
+end_time: 1664945902400
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 72cf0c4d0a95427091217a3ce41af199
+run_uuid: 72cf0c4d0a95427091217a3ce41af199
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1664945901308
+status: 3
+tags: []
+user_id: juan

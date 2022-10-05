@@ -5,3 +5,43 @@
 # Link: https://kedro.readthedocs.io/en/0.18.3/kedro_project_setup/configuration.html#parameters
 
 path: data/01_raw/CellPhoneDS.csv
+
+target_column: 
+  - price_range
+
+features:
+  - talk_time
+  - battery_power
+  - pc
+  - fc
+  - blue
+  - dual_sim
+  - four_g
+  - three_g
+  - touch_screen
+  - wifi
+  - mobile_wt
+  - px_width
+  - sc_h
+  - sc_w
+  - m_dep
+  - hgv
+  - n_cores
+  - ram
+  - werf
+  - int_memory
+  - px_height
+  - clock_speed
+
+
+categorical_cols:
+  - blue
+  - dual_sim
+  - four_g
+  - three_g
+  - touch_screen
+  - wifi
+
+split:
+  test_size: 0.2
+  random_state: 3
