@@ -157,3 +157,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# mi runs
+!miruns/1/**/
