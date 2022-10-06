@@ -6,8 +6,7 @@
 
 path: data/01_raw/CellPhoneDS.csv
 
-target_column: 
-  - price_range
+target_column: price_range
 
 features:
   - talk_time
@@ -25,10 +24,10 @@ features:
   - sc_h
   - sc_w
   - m_dep
-  - hgv
+  # - hgv
   - n_cores
   - ram
-  - werf
+  # - werf
   - int_memory
   - px_height
   - clock_speed
@@ -41,6 +40,24 @@ categorical_cols:
   - three_g
   - touch_screen
   - wifi
+
+numerical_cols:
+  - talk_time
+  - battery_power
+  - pc
+  - fc
+  - mobile_wt
+  - px_width
+  - sc_h
+  - sc_w
+  - m_dep
+  - hgv
+  - n_cores
+  - ram
+  - werf
+  - int_memory
+  - px_height
+  - clock_speed
 
 split:
   test_size: 0.2
