@@ -24,13 +24,15 @@ features:
   - sc_h
   - sc_w
   - m_dep
-  # - hgv
+  - hgv
   - n_cores
   - ram
-  # - werf
+  - werf
   - int_memory
   - px_height
   - clock_speed
+  - 'Unnamed: 0'
+  - index
 
 
 categorical_cols:

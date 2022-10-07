@@ -71,7 +71,7 @@ def etl_processing(data: pd.DataFrame, parameters: Dict[str, Any]) -> pd.DataFra
 
 
     pipe_functions = [
-        ('drop_constant_values', DropConstantFeatures(tol=1, missing_values= 'ignore')),
+        # ('drop_constant_values', DropConstantFeatures(tol=1, missing_values= 'ignore')),
         ('drop_duplicates', DropDuplicateFeatures(missing_values= 'ignore'))                
     ]
 
@@ -137,7 +137,9 @@ def split_data(data: pd.DataFrame, parameters: Dict) -> Tuple:
 
     #remove rows without target information
     data = data.dropna(subset=[parameters['target_column']])
-    print(data.info())
+    del parameters['features'][15]
+    print(parameters['features'])
+    # 
     x_features = data[parameters['features']]
     y_target = data[parameters['target_column']]
 
