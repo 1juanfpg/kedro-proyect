@@ -8,7 +8,6 @@ Data_raw:
   filepath: data/01_raw/data_raw_csv.csv
   layer: raw
 
-
 x_train:
   type: pandas.CSVDataSet
   filepath: data/02_intermediate/x_train.csv
