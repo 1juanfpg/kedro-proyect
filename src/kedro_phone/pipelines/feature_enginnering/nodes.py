@@ -121,8 +121,6 @@ def post_processing(x_in: np.ndarray, y_train: np.ndarray, parameters: Dict[str,
     y_out = data[:, -1]
     x_out = data[:, :-1]
     mlflow.log_param('shape post-processing', x_out.shape)
-
-    print(x_out.info())
     
     return x_out, y_out
 
